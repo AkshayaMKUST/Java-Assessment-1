@@ -17,7 +17,10 @@ public class EmployeeOperation {
     public void getAddress(Map<Employee, Address> employeeAddressMap, Employee employee) {
         Address address = employeeAddressMap.get(employee);
         if (address != null) {
-            System.out.println(address.getHouseNumber() + "," + address.getStreetName() + "," + address.getCity() + "," + address.getPinCode());
+            System.out.println("House Number : "+address.getHouseNumber() + "\nStreet Name : " + address.getStreetName() + "\nCity : " + address.getCity() + "\nPincode : " + address.getPinCode());
+        }
+        else {
+            System.out.println("Employee does not exist");
         }
     }
 }
